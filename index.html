@@ -4,6 +4,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <title>COMP 20 - MIDTERM PROJECT - HOMEPAGE</title>
+    <style>
+        .column{
+              float: left; width: 33.33%, padding: 5px;
+        }
+        .row{
+            content: " "; clear: both; display: table;
+        }
+       @media screen and (max-width: 500px){
+          .column{
+                width: 100%
+          }
+       }
+    </style>
 
   </head>
   <body>
@@ -26,5 +39,18 @@
         </li>
       </ul>
     </nav>
+    <p>Trending destinations</p>
+    <div class = "row">
+        <div class = "column">
+            <img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/c81f09d36451a030f40f459726f31a96-barcelona.jpeg?sharp=10&vib=20&w=1200" alt="Barcelona" style="width: 100%">
+        </div>
+        <div class = "collumn">
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkQ77q3PEp98M8Caf3F2b9XlmmqmU-evUsosR-Fx7D6hY42hU" alt ="Tokyo" style="width: 100%"> 
+        </div>
+        <div class = "column">
+            <img src="https://www.travelbeginsat40.com/wp-content/uploads/2019/07/The-View-of-Istanbul-5.jpg" alt="Istanbul" style="width: 100%">
+        </div>
+    </div>
+    
   </body>
 </html>
